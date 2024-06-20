@@ -1,0 +1,259 @@
+{
+  "name": "archid-registry",
+  "developer": {
+    "archwayd": {
+      "docker": false
+    },
+    "scripts": {
+      "test": "cargo unit-test",
+      "build": "cargo build",
+      "optimize": "cargo run-script optimize",
+      "wasm": "cargo wasm",
+      "query": "archwayd query wasm",
+      "tx": "archwayd tx wasm execute"
+    },
+    "deployments": [
+      {
+        "project": "archid-marketplace",
+        "type": "migrate",
+        "chainId": "archway-1",
+        "codeId": 517,
+        "contract": "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0",
+        "txhash": "6A07161B64206DA3163B4C67BEE66463A6F89FC446F8A29B01B24A6D35F27C4A"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "archway-1",
+        "codeId": 517,
+        "checksum": "79c73152c9172bf8247b1052ba2770418bbc8212313fb9a701871c298a1dfcfe",
+        "txhash": "9D3756640F84A7619C66B632DDCA3280080F8B1619D4C7F85D4DC7E0F410ED3E"
+      },
+      {
+        "project": "archid-marketplace",
+        "type": "migrate",
+        "chainId": "constantine-3",
+        "codeId": 2948,
+        "contract": "archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r",
+        "txhash": "4F04AC7AD155F8057A53BE2211E837BAB157000905BAB76912F06936510375F0"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "constantine-3",
+        "codeId": 2948,
+        "checksum": "0e6d3523d183b1efc8cb3fbdb8ba0a613b81e6a32080a996cd275ab734a29591",
+        "txhash": "8630C1F8DFF52FA3979AA7C0151F4861281AF3AE8900651E9789B130067CBA3C"
+      },
+      {
+        "project": "archid-registry",
+        "type": "set-metadata",
+        "chainId": "archway-1",
+        "codeId": 9,
+        "txhash": "485EC908712CCDC0D65918F0E8E90E291D32720F2D0C691CCC055544B98C14A1",
+        "contract": "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0",
+        "contractMetadata": {
+          "ownerAddress": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+          "rewardsAddress": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6"
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "instantiate",
+        "chainId": "archway-1",
+        "codeId": 9,
+        "txhash": "2951FE20DC1FE4E0053AD26176DF19812D5430077F0F2769ED50B9BF4BB39721",
+        "address": "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0",
+        "admin": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+        "label": "archid-registry-v1",
+        "args": {
+          "admin": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+          "wallet": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+          "cw721": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+          "base_cost": "1000000000000000000",
+          "base_expiration": 31536000
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "archway-1",
+        "codeId": 9,
+        "checksum": "6bbaf5517413936e3d88fdd1b4e5044a83e69ec088428cb58ff189ce3bdc9b23",
+        "txhash": "B6FACF0CD91EA6DCCDFE94D0A1080600FDB9E8F0F6EB5B6C787F0A8C21116782"
+      },
+      {
+        "project": "archid-registry",
+        "type": "set-metadata",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 97,
+        "txhash": "ECE31605779F12DFFE4DD2B38D16A3B0B3265CB08441DFF5F88042D4383C4961",
+        "contract": "archway15ndx69jvdmr9cqvm0pvx32ty3u0845x32fzgh9e8d8wcc9putucqv355da",
+        "contractMetadata": {
+          "ownerAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq",
+          "rewardsAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "instantiate",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 97,
+        "txhash": "C3E7DAAF35A111868DF0B375634CD600B4FCF9762D06B5A0BCA481EB509BE2DD",
+        "address": "archway15ndx69jvdmr9cqvm0pvx32ty3u0845x32fzgh9e8d8wcc9putucqv355da",
+        "admin": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 97,
+        "txhash": "A2F05CDF3A972A8AF96AF1367E17525EDB047401B1B4BD5B09AB179E54223585"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 96,
+        "txhash": "3CAD9DD22C9658C2CB0B6ABE5E5500BD61D20D8FC7EA5280A1D60676F673D2AD"
+      },
+      {
+        "project": "archid-registry",
+        "type": "set-metadata",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 94,
+        "txhash": "A6AA6D4EC5F9ABF289C984899635B409F078AAAC5745DCD4B7B00D72A34BDFE8",
+        "contract": "archway1pann3fw7e2jnaspkyd7cjl40m9e7gu90xmrzgrhr0rzwrf3tmvxsr357ve",
+        "contractMetadata": {
+          "ownerAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq",
+          "rewardsAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "instantiate",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 94,
+        "txhash": "7CC3658ABD83405EAED255D27CE4A6CD45B77FBAEFA8E2D52160E661871F7C6D",
+        "address": "archway1pann3fw7e2jnaspkyd7cjl40m9e7gu90xmrzgrhr0rzwrf3tmvxsr357ve",
+        "admin": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "mainnet-dry-run-2",
+        "codeId": 94,
+        "txhash": "63CAAD534109242DC180C5D9258C456DE442CEBE7F41E552B09A7DA978DD36E1"
+      },
+      {
+        "project": "archid-registry",
+        "type": "set-metadata",
+        "chainId": "constantine-3",
+        "codeId": 364,
+        "txhash": "2B7B8E4E6389FFA21D01D58E2ED0B9C92995C753DB539F9E5BC1F0BBF65A954A",
+        "contract": "archway1nzfv8usr6zycaxzzsu6l29xsufmjme7glxxgxmz0axrpmtuad6fspmamme",
+        "contractMetadata": {
+          "ownerAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq",
+          "rewardsAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "instantiate",
+        "chainId": "constantine-3",
+        "codeId": 364,
+        "txhash": "256D7631E0C1F40C86A567BCB72A558ACE19B0988FB02C0CFC658B65CF173279",
+        "address": "archway1nzfv8usr6zycaxzzsu6l29xsufmjme7glxxgxmz0axrpmtuad6fspmamme",
+        "admin": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "constantine-3",
+        "codeId": 364,
+        "txhash": "70403B4FBD5C9A51E5F299893F1A94C9B233D59C133DC1F3297D723A9307F045"
+      },
+      {
+        "project": "archid-registry",
+        "type": "set-metadata",
+        "chainId": "constantine-3",
+        "codeId": 96,
+        "txhash": "2E6CB87501E630D864DEA312D5814BF93ED4C7E87A6C8993BA640615CA016D11",
+        "contract": "archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r",
+        "contractMetadata": {
+          "ownerAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq",
+          "rewardsAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "instantiate",
+        "chainId": "constantine-3",
+        "codeId": 96,
+        "txhash": "7EDEEBC95E555762AA302D696262CEAF9D997A31633293A0601194C763C92857",
+        "address": "archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r",
+        "admin": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "constantine-3",
+        "codeId": 96,
+        "txhash": "29CBCFDD53470F98018BE77F2B94619224B3BD8FB24DF84E100E89D1C25BB704"
+      },
+      {
+        "project": "archid-registry",
+        "type": "set-metadata",
+        "chainId": "constantine-3",
+        "codeId": 56,
+        "txhash": "AB85AC8ED0DFD8A1CE159E1905BE50DA10FA7441A1A4968AB390686AD00E1FC6",
+        "contract": "archway1fphguznhazgqdlr9mpfh6nmn3vjjr73ksz3ukznv6q7s9ndfq2csu76f3s",
+        "contractMetadata": {
+          "ownerAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq",
+          "rewardsAddress": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+        }
+      },
+      {
+        "project": "archid-registry",
+        "type": "instantiate",
+        "chainId": "constantine-3",
+        "codeId": 56,
+        "txhash": "A925D1054FD3AAE66542A482029B7B99EE67A29D8594F9DD3C5E8A0223C1B8A1",
+        "address": "archway1fphguznhazgqdlr9mpfh6nmn3vjjr73ksz3ukznv6q7s9ndfq2csu76f3s",
+        "admin": "archway1f395p0gg67mmfd5zcqvpnp9cxnu0hg6r9hfczq"
+      },
+      {
+        "project": "archid-registry",
+        "type": "store",
+        "chainId": "constantine-3",
+        "codeId": 56,
+        "txhash": "F72E9583FC5C7F8F81BA76A61599130D31027BCB11667619BF44040F4680623E"
+      }
+    ]
+  },
+  "network": {
+    "name": "Archway",
+    "chainId": "archway-1",
+    "type": "mainnet",
+    "fees": {
+      "feeDenom": "aarch"
+    },
+    "gas": {
+      "prices": "0.002aarch",
+      "mode": "auto",
+      "adjustment": "1.5"
+    },
+    "wasm": {
+      "bech32Hrp": "archway",
+      "archwayd": "1.0.0-rc.2",
+      "configDir": ".archway",
+      "binary": "archwayd"
+    },
+    "urls": {
+      "rpc": {
+        "url": "https://rpc.mainnet.archway.io",
+        "port": 443
+      }
+    }
+  }
+}
