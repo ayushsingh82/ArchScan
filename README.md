@@ -12,8 +12,9 @@
 - **External Transaction Tracking**: Track external transactions involving arch domain addresses.
 - **Comprehensive Portfolio Overview**:  ArchScan provides a comprehensive overview of your arch domain portfolio, including detailed information such as time, hash, and more.
 - **Future Development**: The future goal of  ArchScan is to evolve into a complete portfolio tracker for Arch. This will include additional features such as portfolio performance analysis, asset allocation insights, and customizable reporting.
-![Uploading image.png…]()
 
+
+![image](https://github.com/ayushsingh82/ArchScan/assets/121667116/cb2c88e4-07b2-41af-bcb5-a2d7719f7d68)
 
 
 
